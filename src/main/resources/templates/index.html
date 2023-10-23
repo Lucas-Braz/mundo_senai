@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background: url('/imagens/bg_mundo_senai.png') no-repeat;
+            background-size: cover;
+        }
+        .invalid-feedback{
+            color: #000;
+            background: #fcc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css" rel="stylesheet">
+    <!--Custom-->
+    <script src="/js/home.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="row" style="margin-top: 25%; transform: translateY(-50%);">
+        <div class="col-8 mb-3">
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="nome" placeholder="Nome"
+                           required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="invalid-feedback">
+                    Necessário Informar o Nome!
+                </div>
+            </div>
+        </div>
+        <div class="col-4 mb-3">
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                <div class="form-floating">
+                    <input type="date" class="form-control" id="data" placeholder="Data Nascimento"
+                           required>
+                    <label for="data">Data Nascimento</label>
+                </div>
+                <div class="invalid-feedback">
+                    Necessário Informar a Data de Nascimento!
+                </div>
+            </div>
+        </div>
+        <div class="col-8 mb-3">
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="fa-regular fa-envelope"></i></span>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="email" placeholder="e-Mail"
+                           required>
+                    <label for="email">e-Mail</label>
+                </div>
+                <div class="invalid-feedback">
+                    Necessário Informar o e-Mail ou telefone!
+                </div>
+            </div>
+        </div>
+        <div class="col-4 mb-3">
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="fa-solid fa-mobile-screen"></i></span>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="telefone"
+                           required>
+                    <label for="telefone">Telefone</label>
+                </div>
+                <div class="invalid-feedback">
+                    Necessário Informar o e-Mail ou telefone!
+                </div>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <button id="salvar" class="btn btn-lg btn-primary">Salvar</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
